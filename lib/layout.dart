@@ -16,7 +16,7 @@
     Widget build(BuildContext context) {
       return Container(
         child: Column(
-          children: [title(),]
+          children: [image(), title(),]
         ),
       );    
     }
@@ -41,5 +41,9 @@
           Text ('Kandersteg, Switzerland'),
         ],
       );
+    }
+
+    Widget image(){
+      return Image.asset('sky.jpeg', fit: BoxFit.cover,);
     }
   }
